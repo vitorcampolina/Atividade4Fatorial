@@ -9,5 +9,9 @@ public class TesteDeCalculadoraFatorial {
     public void testFactorialOf0() {
         assertEquals(1, CalculadoraFatorial.factorial(0));
     }
-
+    
+    @Test
+    public void testFactorialOf5() {
+        assertEquals(120, CalculadoraFatorial.factorial(5));
+    }
 }
