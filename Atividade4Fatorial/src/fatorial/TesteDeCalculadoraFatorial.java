@@ -14,4 +14,9 @@ public class TesteDeCalculadoraFatorial {
     public void testFactorialOf5() {
         assertEquals(120, CalculadoraFatorial.factorial(5));
     }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void	testNegativeNumber() {
+    	CalculadoraFatorial.factorial(-1);
+    }
 }
